@@ -1,0 +1,21 @@
+var a;
+var b;
+var c;
+var d;
+var e = [1, 2, 3];
+var f = [1, 2, 3];
+var g = [1, "a", true];
+var h = ["a", 3, false];
+var krediPayment = 0;
+var havalePayment = 1;
+var eftPayment = 2;
+var Payment;
+(function (Payment) {
+    Payment[Payment["kredi"] = 0] = "kredi";
+    Payment[Payment["havalae"] = 1] = "havalae";
+    Payment[Payment["eft"] = 2] = "eft";
+})(Payment || (Payment = {}));
+var kredi = Payment.kredi;
+console.log(kredi);
+console.log(Payment.havalae);
+console.log(Payment.eft);
